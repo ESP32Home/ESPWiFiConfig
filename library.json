@@ -1,0 +1,21 @@
+{
+    "name": "ESPWiFiConfig",
+    "version" : "1.0.0",
+    "description" : "a wrapper library over ESPAsyncWiFiManager to provide the user with a single function call to configure the wifi credentials through web Access Point",
+    "keywords" : "wifi, credentials, access point, config",
+    "license" : "MIT",
+    "repository":{
+        "type" : "git",
+        "url" : "https://github.com/ESP32Home/ESPWiFiConfig.git"
+    },
+    "authors":{
+        "url": "https://github.com/wassfila"
+    },
+    "dependencies":{
+        "ESPAsyncWiFiManager" : "0.22",
+        "ESPAsyncWebServer": "1.2.3",
+        "DNSServer" : "1.1.0"
+    },
+    "frameworks" : "arduino",
+    "platforms" : "espressif32"
+}
