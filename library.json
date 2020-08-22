@@ -9,6 +9,7 @@
         "url" : "https://github.com/ESP32Home/ESPWiFiConfig.git"
     },
     "authors":{
+        "name" : "wassfila",
         "url": "https://github.com/wassfila"
     },
     "dependencies":{
