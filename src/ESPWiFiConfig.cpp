@@ -2,7 +2,7 @@
 #include <DNSServer.h>
 #include <ESPAsyncWebServer.h>
 #include <ESPAsyncWiFiManager.h>         //https://github.com/tzapu/WiFiManager
-
+#include <WiFi.h>
 
 void configModeCallback(AsyncWiFiManager *myWiFiManager) {
   Serial.println("Entered config mode");
