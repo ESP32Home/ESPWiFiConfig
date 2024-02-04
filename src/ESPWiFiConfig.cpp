@@ -21,7 +21,22 @@ void wifi_setup(){
 
   if(!wifiManager.autoConnect()) {
     Serial.println("failed to connect and hit timeout");
+    ESP.restart();
+    delay(1000);
+  }
+  Serial.println("WiFi connected");
 
+}
+
+void wifi_setup_secret(const String &AP,const String &Pass){
+  AsyncWebServer server(80);
+  DNSServer dns;
+  AsyncWiFiManager wifiManager(&server,&dns);
+
+  wifiManager.setAPCallback(configModeCallback);
+
+  if(!wifiManager.autoConnect(AP.c_str(),Pass.c_str())) {
+    Serial.println("failed to connect and hit timeout");
     ESP.restart();
     delay(1000);
   }
