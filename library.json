@@ -1,6 +1,6 @@
 {
     "name": "ESPWiFiConfig",
-    "version" : "1.1.2",
+    "version" : "1.1.3",
     "description" : "a wrapper library over ESPAsyncWiFiManager to provide the user with a single function call to configure the wifi credentials through web Access Point. Two options available with or without password",
     "keywords" : "wifi, credentials, access point, config",
     "license" : "MIT",
